@@ -1,0 +1,8 @@
+{
+  "printWidth": 80,
+  "vueIndentScriptAndStyle": false,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "none"
+}
