@@ -13,19 +13,3 @@ export function setBoardStyles(options: GameBoardInfo) {
   gameBoard.style.justifyContent = 'center'
   gameBoard.style.alignItems = 'center'
 }
-
-export function setupBoard(options: GameBoardInfo) {
-  const { boardRef: gameBoard, rows, cols } = options
-  Array.from({ length: rows }).forEach((_, row) => {
-    Array.from({ length: cols }).forEach((_, col) => {
-      const cell = document.createElement('input')
-      cell.setAttribute('type', 'checkbox')
-      // cell.disabled = true;
-      cell.classList.add('cell')
-      cell.id = `${row}${col}`
-      cell.dataset.row = row.toString()
-      cell.dataset.col = col.toString()
-      gameBoard.appendChild(cell)
-    })
-  })
-}
