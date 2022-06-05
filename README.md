@@ -59,7 +59,7 @@ A simple snake game made with html checkboxes.
 ### :camera: Screenshots
 
 <div align="center">
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
+  <img src=".github/assets/ss1.png" alt="screenshot" />
 </div>
 
 <!-- Getting Started -->
