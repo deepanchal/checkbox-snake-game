@@ -1,6 +1,7 @@
 :root {
-  --primary: #00bcd4;
+  --primary: #2c365e;
   --secondary: #fafafa;
+  --accent: #9d3039;
 }
 
 /* css reset */
@@ -42,4 +43,12 @@ html, body {
 
 .cell {
   transform: scale(2);
+}
+
+.cell__food {
+  accent-color: var(--accent);
+}
+
+.cell__body {
+  accent-color: var(--primary);
 }
