@@ -134,7 +134,7 @@ export class SnakeGame {
   }
 
   generateFood() {
-    const { boardRef: gameBoard, board } = this
+    const { board } = this
     // spawn food on random empty cell
     const emptyCells = board.reduce((acc, row, x) => {
       row.forEach((col, y) => {
@@ -143,7 +143,7 @@ export class SnakeGame {
         }
       })
       return acc
-    }, [])
+    }, [] as [number, number][])
 
     const randomIndex = Math.floor(Math.random() * emptyCells.length)
     const [x, y] = emptyCells[randomIndex]
